@@ -1,7 +1,7 @@
 # RocketBeansTV Mission Control
 An unofficial browser extension for [RocketbeansTv](http://rocketbeans.tv).
 
-![Screenshot](http://s22.postimg.org/l2646xeyp/github_banner.png) 
+![Screenshot](http://s27.postimg.org/avwgypok3/github_banner.png) 
 
 For more detailed information about the extension, please refer to the [following reddit post (GER).](https://www.reddit.com/r/rocketbeans/comments/2z4ze8/rocketbeanstv_mission_control_chrome_extension/)
 
