@@ -1,0 +1,319 @@
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+*:focus {
+    outline: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+body{
+  background-color: #eaeaea;
+}
+
+.viewframe{
+  width: 430px;
+  height: 580px;
+  background-color: #eaeaea;
+  position:relative
+}
+
+.navcon{
+  float: left;
+  height: 100%;
+  width: 59px;
+  background-color: #efefef; /**#e5dcdc;  or 101014**/
+  border-right: 1px solid #ddd;
+}
+
+.content{
+  float: right;
+  width: 370px;
+  height: 580px;
+}
+
+/** Cat Nav **/
+
+ul.rblinks_nav{
+    list-style-type: none;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+}
+
+ul.rblinks_nav li{
+  padding: 20px 0px 20px 0px;
+}
+
+ul.rblinks_nav li:hover{
+  background-color: #fefefe;
+  cursor:pointer;
+}
+
+.navImg{
+  width: 24px;
+  height: 24px;
+}
+
+
+/** Current Program **/
+
+.currentprogramTransOverlay{
+  width: 100%;
+  height: 97px;
+  background-image: url('../images/overlay.png');
+}
+
+.currentprogram{
+  width: 100%;
+  height: 97px;
+  background-color: #eae8e8;
+  background-position: center;
+}
+
+.currentprogram :hover{
+  cursor:pointer;
+}
+
+.programPreview{
+  width: 110px;
+  height: 60px;
+  border: 1px solid black;
+  margin: 15px 0px 0px 10px;
+  float: left;
+}
+
+.programInfo{
+  width: 240px;
+  height: 60px;
+  padding: 15px 0px 0px 0px;
+  float: right;
+  text-align: center;
+}
+
+
+.programTitle{
+  font-weight: bold;
+  font-size: 11pt;
+  color: #fff;
+}
+
+.programInfo{
+  margin-top: 3px;
+  text-align: center;
+  font-size: 8pt;
+  color: #efefef;
+}
+
+.houston{
+  height: 30px;
+  color: #fff;
+  background-color: #992626;
+  text-align: center;
+  padding: 6px 0px 3px 0px;
+}
+
+/** Upcoming Program **/
+
+.upcomingProgram{
+  width: 100%;
+  height: 480px;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+table.scheduleTable{
+  width: 500px;
+  border-collapse: collapse;
+}
+
+
+table.scheduleTable tr{
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+/** Standard Declarations **/
+
+table.dataTable{
+  width: 500px;
+  border-collapse: collapse;
+}
+
+
+table.dataTable tr{
+  height: 70px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+table.dataTable tr:hover td{
+  background-color: #333 !important;
+  cursor:pointer;
+  color: #fefefe;
+}
+
+.tdStatus{
+  width: 50px;
+  padding-left: 20px;
+}
+
+.title{
+  color: #333;
+  font-size: 11pt;
+}
+
+.time{
+  color: #939393;
+  font-size: 9pt;
+}
+
+.catNavHeader{
+  height: 50px;
+  background-color: #eae8e8;
+}
+
+.stdDataContainer{
+  width: 100%;
+  height: 530px;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+.trColor1{
+  background-color: #f4f4f4;
+}
+
+.trColor2{
+  background-color: #f2efef;
+}
+
+
+/** Blog **/
+
+.defaultDataContainer{
+  width: 100%;
+  height: 100%;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+.blogDescription{
+  width: 330px;
+  margin-left: 10px;
+}
+
+.blogtd{
+  padding: 10px 0px 10px 0px;
+}
+
+.blogtitle{
+  width: 300px;
+  font-weight: bold;
+}
+
+.blogPreview{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+  width: 75px;
+  height: 40px;
+  border: 1px solid black;
+  background-position: center;
+}
+
+
+/** YT **/
+
+
+ul.ytNav{
+  width: 370px;
+  list-style-type: none;
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+}
+
+ul.ytNav li{
+  display: inline;
+  padding: 20px 64px 20px 64px;
+}
+
+ul.ytNav li:hover{
+  background-color: #d1d1d1;
+  cursor:pointer;
+}
+
+.ytTitle{
+  width: 200px;
+}
+
+.ytPreview{
+  margin-left: 10px;
+  width: 75px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+/** Reddit **/
+
+.redditInfo{
+  color: #9b9b9b;
+  font-size: 11px;
+}
+
+.redditPreview{
+  margin-left: 10px;
+  width: 37px;
+  height: 36px;
+}
+
+.redditScore{
+  color: #777;
+}
+
+.redditTitle{
+  font-size: 9pt;
+  width: 300px;
+}
+
+ul.redditNav{
+  width: 370px;
+  list-style-type: none;
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+  color: #c40101;
+  font-weight: bold;
+
+}
+
+ul.redditNav li{
+  display: inline;
+  padding: 20px 71px 20px 71px;
+}
+
+ul.redditNav li:hover{
+  background-color: #d1d1d1;
+  cursor:pointer;
+}
+
+/** Support **/
+
+.supportImage{
+  margin-left: 10px;
+}
+
+.supportInfoTitle{
+  color: #333;
+  font-weight: bold;
+  font-size: 12pt;
+}
