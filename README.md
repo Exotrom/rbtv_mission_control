@@ -1,5 +1,5 @@
 # RocketBeansTV Mission Control
-An unofficial browser extension for (RocketbeansTv)[http://rocketbeans.tv].
+An unofficial browser extension for [RocketbeansTv](ttp://rocketbeans.tv).
 
 For more detailed information about the extension, please refer to the [following reddit post (GER).](https://www.reddit.com/r/rocketbeans/comments/2z4ze8/rocketbeanstv_mission_control_chrome_extension/)
 
