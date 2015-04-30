@@ -4,14 +4,15 @@
 //
 // ----------------------------------------------------------
 
+var YouTube = new function(){
+  this.initModule = function loadYtData(ytChannelType){
 
-function loadYtData(ytChannelType){
+    // Show the user loading activity
+    SystemHandler.showDataLoader();
 
-  // Show the user loading activity
-  showDataLoader();
-
-  var ytURL = createGoogleDataAPIURLYoutube(ytChannelType);
-  HTTPRequest(ytURL, "GET", "json", parseYoutubeData, "youtube");
+    var ytURL = createGoogleDataAPIURLYoutube(ytChannelType);
+    SystemHandler.HTTPRequest(ytURL, "GET", "json", parseYoutubeData, "youtube");
+  };
 }
 
 function parseYoutubeData(ytData){
@@ -74,8 +75,8 @@ function renderYoutubeContent(resultArray){
 
   $('.content').html(htmlString);
 
-  $(".ytStandard").click(function(){initModule("ytStd"); trackInteraction("Youtube: Standard");});
-  $(".ytLetsplay").click(function(){initModule("ytLp"); trackInteraction("Youtube: Let's Play");});
+  $(".ytStandard").click(function(){SystemHandler.initModule("ytStd"); trackInteraction("Youtube: Standard");});
+  $(".ytLetsplay").click(function(){SystemHandler.initModule("ytLp"); trackInteraction("Youtube: Let's Play");});
 
   // Add click event handlers for dynamic loaded content.
   $("#linkID0").click(function(){ openDynamicTab(resultArray[0].link);});

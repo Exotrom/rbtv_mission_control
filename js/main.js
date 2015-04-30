@@ -1,59 +1,65 @@
 $(document).ready(function() {
     // Set true for opening the extension frame in a new tab via the navigation.
-    setDevMode(false);
+    SystemHandler.devMode(false);
 
     // The function is located in the module "schedule.js"
     // due to the fact that this module is initiated first.
-    initDataLoading();
+    Schedule.initModule();
 });
 
-function initModule(contentType){
-  switch(contentType){
-    case 'schedule':
-      $('.content').html("");
-      initDataLoading();
-    break;
+var SystemHandler = new function(){
+  this.initModule = function(contentType){
+    switch(contentType){
+      case 'schedule':
+        $('.content').html("");
+        Schedule.initModule();
+      break;
 
-    case 'blog':
-      $('.content').html("");
-      loadBlogData();
-    break;
+      case 'blog':
+        $('.content').html("");
+        Blog.initModule();
+      break;
 
-    case 'ytStd':
-      $('.content').html("");
-      loadYtData("ytStd");
-    break;
+      case 'ytStd':
+        $('.content').html("");
+        YouTube.initModule("ytStd");
+      break;
 
-    case 'ytLp':
-      $('.content').html("");
-      loadYtData("ytLp");
-    break;
+      case 'ytLp':
+        $('.content').html("");
+        YouTube.initModule("ytLp");
+      break;
 
-    case 'redditHot':
-      $('.content').html("");
-      loadRedditData("hot");
-    break;
+      case 'redditHot':
+        $('.content').html("");
+        Reddit.initModule("hot");
+      break;
 
-    case 'redditNew':
-      $('.content').html("");
-      loadRedditData("new");
-    break;
+      case 'redditNew':
+        $('.content').html("");
+        Reddit.initModule("new");
+      break;
 
-    case 'support':
-      $('.content').html("");
-      renderSupportInfo();
-    break;
-  }
-}
+      case 'support':
+        $('.content').html("");
+        renderSupportInfo();
+      break;
+    }
+  };
 
-function showDataLoader(){
-  $('.content').append('<center><div style="margin-top: 230px"><img src="../images/loader.gif"/><br><br>Lade Daten...</div></center>');
-}
+  this.showDataLoader = function(){
+    $('.content').append('<center><div style="margin-top: 230px"><img src="../images/loader.gif"/><br><br>Lade Daten...</div></center>');
+  };
 
-function setDevMode(status){
-  if(status){
-    $('.rblinks_nav').append('<li class="dev">devmode</li>');
-  }
+  this.devMode = function(status){
+    if(status){
+      $('.rblinks_nav').append('<li class="dev">devmode</li>');
+    }
+  };
+
+  this.HTTPRequest = function (URL, requestType, dataType, callbackFunction, dataSource){
+    HTTPRequest(URL, requestType, dataType, callbackFunction, dataSource);
+  };
 }
 
 // ----------------------------------------------------------

@@ -4,14 +4,19 @@
 //
 // ----------------------------------------------------------
 
-function loadRedditData(subredditCat){
+var Reddit = new function (){
 
-  // Show the user loading activity
-  showDataLoader();
-  var redditURL = "https://www.reddit.com/r/rocketbeans/"+ subredditCat + ".json?sort=new&limit=19";
+  this.initModule = function loadRedditData(subredditCat){
 
-  HTTPRequest(redditURL, "GET", "json", parseRedditData, "reddit");
+    // Show the user loading activity
+    SystemHandler.showDataLoader();
+    var redditURL = "https://www.reddit.com/r/rocketbeans/"+ subredditCat + ".json?sort=new&limit=19";
+
+    SystemHandler.HTTPRequest(redditURL, "GET", "json", parseRedditData, "reddit");
+  };
 }
+
+
 
 function parseRedditData(redditData){
 
@@ -115,8 +120,8 @@ function renderRedditContent(resultArray){
 
   $('.content').html(htmlString);
 
-  $(".redditNew").click(function(){initModule("redditNew"); trackInteraction("Reddit: New");});
-  $(".redditHot").click(function(){initModule("redditHot"); trackInteraction("Reddit: Hot");});
+  $(".redditNew").click(function(){SystemHandler.initModule("redditNew"); trackInteraction("Reddit: New");});
+  $(".redditHot").click(function(){SystemHandler.initModule("redditHot"); trackInteraction("Reddit: Hot");});
 
   // Add click event handlers for dynamic loaded content.
   $("#linkID0").click(function(){ openDynamicTab(resultArray[0].link);});

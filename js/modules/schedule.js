@@ -8,17 +8,18 @@ var twitchData;
 var googleData;
 var twitchAPIstatus;
 
-function initDataLoading() {
-    //Twitch Data needs to be loaded everytime the popup accures!
-    loadTwitchData();
+var Schedule = new function(){
+  this.initModule = function initDataLoading() {
+      //Twitch Data needs to be loaded everytime the popup accures!
+      loadTwitchData();
+  };
 }
-
 
 // This function handles the data loading from the twitch and google API.
 function dataLoadHandler(data, dataSource) {
 
     // Show the user loading activity
-    showDataLoader();
+    SystemHandler.showDataLoader();
 
     // First load the data from twitch due to the fact that the twitch API
     // is slower then googles API.
@@ -146,7 +147,7 @@ function generateSchedule() {
 
             // Get the startDate of the following show for notifications.
             var nextShowData = googleData.items[i + 1];
-            
+
             getNextShow(nextShowData); // Call function in background.js
           **/
 
@@ -389,7 +390,7 @@ function parseShowTitle(showTitle) {
 // Function for calling the Twitch API to receive the Twitch Data.
 function loadTwitchData() {
     var twitchRbtvURL = "https://api.twitch.tv/kraken/streams/rocketbeanstv";
-    HTTPRequest(twitchRbtvURL, "GET", "json", dataLoadHandler, "twitch");
+    SystemHandler.HTTPRequest(twitchRbtvURL, "GET", "json", dataLoadHandler, "twitch");
 }
 
 // Callback function for the request. Renders the twitch data in the UI.

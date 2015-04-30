@@ -1,4 +1,4 @@
-var gobalShowData;
+//var gobalShowData;
 
 function loadSchedule(){
   // 1. create Google Data API URL string.
@@ -6,7 +6,7 @@ function loadSchedule(){
 
   // 2. Send HTTPRequest.
   // The success function in ajax.js calls the generateSchedule function (callback).
-  HTTPRequest(googleCalenderURL, "GET", "json", dataLoadHandler, "google");
+  SystemHandler.HTTPRequest(googleCalenderURL, "GET", "json", dataLoadHandler, "google");
 }
 
 // Function to create the Google Data API (v3) URL for the calender.

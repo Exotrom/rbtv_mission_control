@@ -4,13 +4,15 @@
 //
 // ----------------------------------------------------------
 
+var Blog = new function(){
+  this.initModule = function loadBlogData(){
 
-function loadBlogData(){
-  // Show the user loading activity
-  showDataLoader();
+    // Show the user loading activity
+    SystemHandler.showDataLoader();
 
-  var blogRSSFeedURL = "http://rocketbeans.tv/feed/";
-  HTTPRequest(blogRSSFeedURL, "GET", "XML", parseBlogData, "blog");
+    var blogRSSFeedURL = "http://rocketbeans.tv/feed/";
+    SystemHandler.HTTPRequest(blogRSSFeedURL, "GET", "XML", parseBlogData, "blog");
+  };
 }
 
 function parseBlogData(blogData){

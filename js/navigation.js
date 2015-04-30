@@ -22,12 +22,12 @@ function openTab(mapKey){
 
 // EventListener used for DOM binding.
 document.addEventListener('DOMContentLoaded', function() {
-	$(".schedule").click(function(){ initModule("schedule"); trackInteraction("Category: schedule");});
-	$(".blog").click(function(){ initModule("blog"); trackInteraction("Category: blog");});
-	$(".support").click(function(){ initModule("support"); trackInteraction("Category: support");});
-	$(".yt").click(function(){ initModule("ytStd"); trackInteraction("Category: youtube");});
+	$(".schedule").click(function(){ SystemHandler.initModule("schedule"); trackInteraction("Category: schedule");});
+	$(".blog").click(function(){ SystemHandler.initModule("blog"); trackInteraction("Category: blog");});
+	$(".support").click(function(){ SystemHandler.initModule("support"); trackInteraction("Category: support");});
+	$(".yt").click(function(){ SystemHandler.initModule("ytStd"); trackInteraction("Category: youtube");});
 	$(".twitter").click(function(){ openTab("twitter");  trackInteraction("Category: twitter");});
-	$(".reddit").click(function(){ initModule("redditHot"); trackInteraction("Category: reddit");});
+	$(".reddit").click(function(){ SystemHandler.initModule("redditHot"); trackInteraction("Category: reddit");});
 	$(".info").click(function(){ openTab("info"); trackInteraction("Category: info");});
 	$(".dev").click(function(){ openTab("dev");});
 });
