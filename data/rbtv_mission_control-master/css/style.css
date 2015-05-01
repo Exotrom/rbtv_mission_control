@@ -19,6 +19,9 @@ a:hover{
 
 body{
   background-color: #eaeaea;
+  overflow: hidden !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
 .viewframe{
@@ -170,7 +173,8 @@ table.dataTable tr:hover td{
 
 .title{
   color: #333;
-  font-size: 11pt;
+  font-size: 10pt !important;
+  font-weight:normal !important;
 }
 
 .time{
