@@ -260,13 +260,13 @@ function searchCurrentShow() {
 // Based on this check, the status image of the show is set.
 function getStatusImg(showStatus) {
     if (showStatus == 1) {
-        return '<img src="../images/live.png" width="12" height="12"/>';
+        return '<img src="./images/live.png" width="12" height="12"/>';
     } else if (showStatus == 0) {
-        return '<img src="../images/tv.png" width="12" height="12"/>';
+        return '<img src="./images/tv.png" width="12" height="12"/>';
     } else if(showStatus == 4){
-        return '<img src="../images/simon.png"/>';
+        return '<img src="./images/simon.png"/>';
     } else {
-        return '<img src="../images/repeat.png" width="12" height="12"/>';
+        return '<img src="./images/repeat.png" width="12" height="12"/>';
     }
 }
 

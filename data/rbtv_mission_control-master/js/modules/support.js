@@ -7,12 +7,12 @@
 function renderSupportInfo(){
   var htmlString = '<div class="defaultDataContainer"><table class="dataTable">';
 
-  htmlString = htmlString +'<tr id="linkID0" style="background-color:#f2efef;"><td style="width: 100px;"><img class="supportImage" src="../images/support/rbshop.png" /></td><td>Rocketbeans Shop</td></tr>';
-  htmlString = htmlString +'<tr id="linkID1" style="background-color:#f4f4f4;"><td style="width: 100px;"><img class="supportImage" src="../images/support/amazon-128.png" /></td><td>Amazon (DE)</td></tr>';
-  htmlString = htmlString +'<tr id="linkID2" style="background-color:#f2efef;"><td style="width: 100px;"><img class="supportImage" src="../images/support/amazon-128.png" /></td><td>Amazon (AT)</td></tr>';
-  htmlString = htmlString +'<tr id="linkID3" style="background-color:#f4f4f4;"><td style="width: 100px;"><img class="supportImage" src="../images/support/g2a.png""/></td><td>G2A</td></tr>';
-  htmlString = htmlString +'<tr id="linkID4" style="background-color:#f2efef;"><td style="width: 100px;"><img class="supportImage" src="../images/support/lootchest.png" /></td><td>lootchest.de</td></tr>';
-  htmlString = htmlString +'<tr id="linkID5" style="background-color:#f4f4f4;"><td style="width: 100px;"><img class="supportImage" src="../images/support/transaction.png" /></td><td>PayPal & &Uuml;berweisung</td></tr>';
+  htmlString = htmlString +'<tr id="linkID0" style="background-color:#f2efef;"><td style="width: 100px;"><img class="supportImage" src="./images/support/rbshop.png" /></td><td>Rocketbeans Shop</td></tr>';
+  htmlString = htmlString +'<tr id="linkID1" style="background-color:#f4f4f4;"><td style="width: 100px;"><img class="supportImage" src="./images/support/amazon-128.png" /></td><td>Amazon (DE)</td></tr>';
+  htmlString = htmlString +'<tr id="linkID2" style="background-color:#f2efef;"><td style="width: 100px;"><img class="supportImage" src="./images/support/amazon-128.png" /></td><td>Amazon (AT)</td></tr>';
+  htmlString = htmlString +'<tr id="linkID3" style="background-color:#f4f4f4;"><td style="width: 100px;"><img class="supportImage" src="./images/support/g2a.png""/></td><td>G2A</td></tr>';
+  htmlString = htmlString +'<tr id="linkID4" style="background-color:#f2efef;"><td style="width: 100px;"><img class="supportImage" src="./images/support/lootchest.png" /></td><td>lootchest.de</td></tr>';
+  htmlString = htmlString +'<tr id="linkID5" style="background-color:#f4f4f4;"><td style="width: 100px;"><img class="supportImage" src="./images/support/transaction.png" /></td><td>PayPal & &Uuml;berweisung</td></tr>';
   htmlString = htmlString + '</table></div>';
 
   $('.content').html(htmlString);

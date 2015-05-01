@@ -73,7 +73,7 @@ function parseRedditData(redditData){
       var borderStyle = "";
 
       if(thumbnail == "self"){
-        thumbnail = "../../images/std_reddit_thumb.png";
+        thumbnail = "./images/std_reddit_thumb.png";
       }
 
       else{
@@ -93,7 +93,7 @@ function parseRedditData(redditData){
       colorSkippingCount++;
 
       // The final html string with the show information.
-      var htmlString = '<tr id="linkID'+ linkID + '" class="' + trColor + '"><td style="width: 70px;"><img ' + borderStyle + ' class="redditPreview" src="'+ thumbnail + '" /></td><td><div class="redditTitle">' + title + '<br><span class="redditInfo">von ' + author + ' mit ' + num_comments + ' Kommentaren</span><span class="redditScore"> <img src="../../images/reddit_up.png" width="8" height="8"/> '+score+'</span></div></td></tr>';
+      var htmlString = '<tr id="linkID'+ linkID + '" class="' + trColor + '"><td style="width: 70px;"><img ' + borderStyle + ' class="redditPreview" src="'+ thumbnail + '" /></td><td><div class="redditTitle">' + title + '<br><span class="redditInfo">von ' + author + ' mit ' + num_comments + ' Kommentaren</span><span class="redditScore"> <img src="./images/reddit_up.png" width="8" height="8"/> '+score+'</span></div></td></tr>';
 
       linkID++;
 
@@ -110,7 +110,7 @@ function parseRedditData(redditData){
 }
 
 function renderRedditContent(resultArray){
-  var htmlString = '<div class="catNavHeader"><ul class="redditNav"><li class="redditHot"><img src="../images/reddit.png" width="8" height="8"/> Beliebt</li><li class="redditNew"><img src="../images/reddit.png" width="8" height="8"/> Neu</li></div><div class="stdDataContainer"><table class="dataTable">';
+  var htmlString = '<div class="catNavHeader"><ul class="redditNav"><li class="redditHot"><img src="./images/reddit.png" width="8" height="8"/> Beliebt</li><li class="redditNew"><img src="./images/reddit.png" width="8" height="8"/> Neu</li></div><div class="stdDataContainer"><table class="dataTable">';
 
   for (var i = 0; i < resultArray.length; i++) {
       htmlString = htmlString + resultArray[i].htmlString;

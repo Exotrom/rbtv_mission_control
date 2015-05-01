@@ -125,7 +125,7 @@ function showNotification(){
   timeEnd =timeArray[0];
 
   new Notification("Jetzt: " + infoArray[0], {
-    icon: '../images/icon/32/recorded.png',
+    icon: './images/icon/32/recorded.png',
     body: "Von " + timeStart + " bis " + timeEnd
   });
 

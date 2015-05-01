@@ -7,10 +7,13 @@ For more detailed information about the extension, please refer to the [followin
 
 ### Supported Browsers
 
-* **Google Chrome** v 0.3.0 beta can be installed via the Chrome Web Store - [install via Chrome Web Store](https://chrome.google.com/webstore/detail/rocketbeanstv-mission-con/dcfomalfggghgohbinjpgibmbjpelndf/reviews)
-* **Opera** v 0.2.0 beta can be installed via the Opera-Add-ons - [install via Opera-Add-ons](https://addons.opera.com/de/extensions/details/rocketbeanstv-mission-control/?display=de)
-* **Firefox** The extension has not yet been ported to Firefox. 
-* **Safari** The extension has not yet been ported to Safari.
+
+| Browser        | Version    | Install  |
+| ------------- |-------------| -----    |
+| Google Chrome | 0.3.1 beta  | [Chrome Web Store](https://chrome.google.com/webstore/detail/rocketbeanstv-mission-con/dcfomalfggghgohbinjpgibmbjpelndf/reviews)    |
+| Opera         | 0.2.0 beta  |   [Opera-Add-ons](https://addons.opera.com/de/extensions/details/rocketbeanstv-mission-control/?display=de)    |
+| Firefox       |  NA         |    NA    |
+| Safari        |  NA         |    NA    |
 
 ## Support the Project
 

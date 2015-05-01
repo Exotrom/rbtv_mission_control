@@ -1,0 +1,13 @@
+{
+  "name": "rbtv_mission_control",
+  "title": "Rocket Beans Mission Control",
+  "id": "jid1-ASAGbmBB07Siog",
+  "icon": "data/icon-64.png",
+  "description": "Firefox-Extension f\u00fcr RocketBeansTV",
+  "author": "Cpt-T-Kirk & HYMXDEV",
+  "license": "MPL 2.0",
+  "version": "0.1",
+	"permissions": {
+		"cross-domain-content": ["https://api.twitch.tv/kraken/streams/rocketbeanstv","http://rocketbeans.tv/feed/"]
+	}
+}

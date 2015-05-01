@@ -65,7 +65,7 @@ function parseYoutubeData(ytData){
 }
 
 function renderYoutubeContent(resultArray){
-  var htmlString = '<div class="catNavHeader"><ul class="ytNav"><li class="ytStandard"><img src="../images/yt.png" width="8" height="8"/> Standard</li><li class="ytLetsplay"><img src="../images/yt.png" width="8" height="8"/> Let\'s Play</li></div><div class="stdDataContainer"><table class="dataTable">';
+  var htmlString = '<div class="catNavHeader"><ul class="ytNav"><li class="ytStandard"><img src="./images/yt.png" width="8" height="8"/> Standard</li><li class="ytLetsplay"><img src="./images/yt.png" width="8" height="8"/> Let\'s Play</li></div><div class="stdDataContainer"><table class="dataTable">';
 
   for (var i = 0; i < resultArray.length; i++) {
       htmlString = htmlString + resultArray[i].html;
